@@ -165,7 +165,7 @@ export default {
       const clipImageUrl = this.originCtx.getImageData(x, y, width, height);
       const clipCanvas = this.$refs.clipCanvas;
       const ctx = clipCanvas.getContext("2d");
-      ctx.clearRect(0, 0, 300, 300);  
+      ctx.clearRect(0, 0, 300, 300);
       ctx.putImageData(clipImageUrl, 0, 0, 0, 0, width, height);
       this.handleReset();
     }
